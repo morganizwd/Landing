@@ -1,25 +1,12 @@
-.desktop,
-.desktop * {
-  box-sizing: border-box;
-}
-.desktop {
-  background: #ffffff;
-  width: 1440px;
-  height: 4791px;
-  position: relative;
-  overflow: hidden;
-}
 .hero {
   width: 1440px;
   height: 800px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
+  position: relative;
 }
-.image4 {
+.image {
   background: linear-gradient(to left, #d9d9d9, #d9d9d9);
   height: 800px;
-  position: absolute;
+  position:absolute;
   right: 0px;
   left: 0px;
   top: calc(50% - 400px);
@@ -52,7 +39,7 @@
   height: 84px;
   position: relative;
 }
-.10 {
+. {
   color: #8c8c8c;
   text-align: center;
   font: 700 14px/87px "Montserrat", sans-serif;
@@ -61,7 +48,7 @@
   align-items: center;
   justify-content: center;
 }
-.text4 {
+.text {
   padding: 10px;
   display: flex;
   flex-direction: row;
@@ -73,7 +60,7 @@
   height: 194px;
   position: relative;
 }
-.it2 {
+.it {
   color: #ffffff;
   text-align: center;
   font: var(--mainheaderdesktop, 700 80px/87px "Montserrat", sans-serif);
@@ -93,7 +80,7 @@
   width: 79.85px;
   position: relative;
 }
-.11 {
+.class2 {
   color: #8c8c8c;
   text-align: center;
   font: 700 14px/87px "Montserrat", sans-serif;
