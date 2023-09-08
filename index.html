@@ -1,23 +1,46 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+  <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css" />
-    <title>POIT</title>
-</head>
-<body>
-  <div class="decktop">
-    <header class="hero">
-        <img class="image" src="image3.png" alt="Description of image">
-        <div class="frame-1000001784">
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+      a,
+      button,
+      input,
+      select,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      * {
+        margin: 0;
+        padding: 0;
+        border: none;
+        text-decoration: none;
+        appearance: none;
+        background: none;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="desktop">
+      <section class="hero">
+        <img class="image" src="image.png" alt="">
+        <div class="hero-contant">
           <div class="frame-2">
             <div class="ellipse-1"></div>
-            <h2 class="">ПОИТ</h2>
+            <h2 class="poit">ПОИТ</h2>
           </div>
-          <h1 class="text it">РАССКРОЙ СВОЙ<br>ПОТЕНЦИАЛ В IT</h1>
+          <div class="text">
+            <h1 class="it">РАССКРОЙ СВОЙ<br>ПОТЕНЦИАЛ В IT</h1>
+          </div>
           <div class="frame-1">
-            <h2 class="class2">Исследуй</h2>
+            <h2 class="research">Исследуй</h2>
             <svg
               class="ellipse-2"
               width="43"
@@ -33,131 +56,207 @@
             </svg>
           </div>
         </div>
-    </header> 
-    <article class="text">
-        <img class="image" src="image2.png" alt="Image description">
+      </section>
+      <article class="welcome">
+        <img class="welcome-bg" src="welcome-bg.png" alt="">
         <div class="frame-4">
-          <h2>Добро пожаловать на ПОИТ</h2>
+          <h2 class="greetings">Добро пожаловать на ПОИТ</h2>
           <div class="frame-3">
-            <p class="paragrapg">
-              Измените свое ИТ-образование и навыки с помощью нашего современного
-              университетского факультета, специализирующегося на двух передовых 
-              специальностях.
+            <p class="paragraph">
+              Измените свое ИТ-образование и навыки с помощью нашего
+              современного университетского факультета, специализирующегося на
+              двух передовых специальностях.
             </p>
-            <p class="paragrapg">
-              Погрузитесь в мир программирования и информационных технологий с помощью
-              наших первоклассных преподавателей и выдающихся ресурсов.
+            <p class="paragraph">
+              Погрузитесь в мир программирования и информационных технологий с
+              помощью наших первоклассных преподавателей и выдающихся ресурсов.
             </p>
-            <p class="paragrapg">
-              Присоединяйтесь к рядам успешных программистов и ИТ-экспертов, которые
-              отточили свой опыт в нашем исключительном учреждении.
+            <p class="paragraph">
+              Присоединяйтесь к рядам успешных программистов и ИТ-экспертов,
+              которые отточили свой опыт в нашем исключительном учреждении.
             </p>
           </div>
         </div>
-    </article>     
-    <div class="features">
-        <div class="bg"></div>
-        <div class="cards">
-            <article class="card-1">
-                <img class="image" src="image.png" alt="Description of image">
+      </article>
+      <section class="features">
+        <div class="bg"></div> 
+        <div class="feature-card"> 
+            <div class="feature-card-1">
+                <img class="image2" src="image2.png" alt="Описание изображения"> 
                 <div class="frame-12">
-                    <h3>Программная инженерия</h3>
-                    <p class="2">Овладейте искусством написания кода</p>
+                    <h2 class="pir">Программная инженерия</h2> 
+                    <p class="gain">Овладейте искусством написания кода</p> 
                 </div>
-            </article>
-        </div>
-    </div>           
-    <article class="text">
-        <img class="image" src="image4.png" alt="Description of image">
-        <div class="frame-4">
-          <h2>Черно-белый блеск</h2>
-          <div class="frame-3">
-            <p class="2">
-              Погрузитесь в мир разработки программного обеспечения, где главенствуют
-              минимализм и монохромный стиль. В нашем университете мы сочетаем
-              передовые технологии, вневременную эстетику и практические знания для
-              создания инновационных решений.
-            </p>
-          </div>
-        </div>
-    </article>     
-    <section class="action">
-        <div class="bg"></div>
-        <div class="frame-23">
-          <div class="frame-15">
-            <article class="baner-1">
-              <div class="rectangle-4"></div>
-              <div class="frame-18">
-                <div class="group-3">
-                  <div class="rectangle-5"></div>
-                  <svg class="command"></svg>
-                </div>
-                <h3>Мастера Минимализма</h3>
-                <p class="2">Первоклассная учебная программа</p>
-              </div>
-            </article>
-            
-            <article class="baner-2">
-              <div class="rectangle-42"></div>
-              <div class="frame-142">
-                <h3>Эффективные кодеры</h3>
-                <p class="2">Команда мечты стартапов</p>
-              </div>
-              <div class="group-1">
-                <div class="rectangle-52"></div>
-                <svg class="check-square"></svg>
-              </div>
-            </article>
-            
-            <article class="baner-3">
-              <div class="rectangle-43"></div>
-              <div class="frame-143">
-                <h3>Произведение искусства</h3>
-                <p class="2">Красивые кодовые базы</p>
-              </div>
-              <div class="group-2">
-                <div class="rectangle-53"></div>
-                <svg class="book-open"></svg>
-              </div>
-            </article>
-          </div>
-          
-          <div class="frame-22">
-            <img class="rectangle-6" src="rectangle-6.png" alt="Description of the image">
-            <div class="frame-16">
-              <h2 class="3">Взгляд в наш минималистичный мир разработки программного обеспечения</h2>
-              <p class="4">Исследуйте уникальное сочетание технологий, дизайна и чистого
-                минимализма в нашем кампусе, где инновационное программное обеспечение
-                оживает благодаря силе простоты и элегантности.
-              </p>
             </div>
           </div>
+      </section>    
+      <article class="bw-shine">
+        <div class="bw-shine-bg"></div> <!-- Если это фоновое изображение, его можно оставить таким образом. -->
+        <img class="bw-shine-image" src="bw-shine-image.png" alt="Описание изображения"> <!-- Добавил alt для описания изображения -->
+    
+        <div class="bw-shine2">
+            <h2 class="bw">Черно-белый блеск</h2> <!-- Преобразовал в h2, предполагая что это подходящий уровень иерархии для этого заголовка -->
+            <div class="dive-in">
+                <p class="reload-paragraph">
+                    Погрузитесь в мир разработки программного обеспечения, где главенствуют минимализм и монохромный стиль. В нашем университете мы сочетаем передовые технологии, вневременную эстетику и практические знания для создания инновационных решений.
+                </p>
+            </div>
         </div>
-    </section>       
-    <footer class="footer">
-        <div class="bg"></div>
-        <div class="frame-11">
-          <div class="frame-10">
-            <nav class="frame-8">
-              <h3>Социальные сети</h3>
-              <ul>
-                <li>Программная инженерия</li>
-                <li>Информатика и вычислитильная техника</li>
-              </ul>
-            </nav>
-            <nav class="frame-9">
-              <h3>Аудитории</h3>
-              <ul>
-                <li>Галерея</li>
-                <li>Контакты</li>
-              </ul>
-            </nav>
-          </div>
-          <div class="copyright-2023">
+      </article>    
+      <div class="action">
+        <div class="action-bg"></div>
+        <article class="frame-23">
+            <div class="baner-placeholder">
+    
+                <div class="master-banner">
+                    <div class="rectangle-4"></div>
+                    <div class="master-baner-content">
+                        <div class="master-button-ico">
+                            <div class="master-button-ico-bg"></div>
+                            <svg
+                    class="command"
+                    width="97"
+                    height="96"
+                    viewBox="0 0 97 96"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M72.5 12C69.3174 12 66.2652 13.2643 64.0147 15.5147C61.7643 17.7652 60.5 20.8174 60.5 24V72C60.5 75.1826 61.7643 78.2348 64.0147 80.4853C66.2652 82.7357 69.3174 84 72.5 84C75.6826 84 78.7348 82.7357 80.9853 80.4853C83.2357 78.2348 84.5 75.1826 84.5 72C84.5 68.8174 83.2357 65.7652 80.9853 63.5147C78.7348 61.2643 75.6826 60 72.5 60H24.5C21.3174 60 18.2652 61.2643 16.0147 63.5147C13.7643 65.7652 12.5 68.8174 12.5 72C12.5 75.1826 13.7643 78.2348 16.0147 80.4853C18.2652 82.7357 21.3174 84 24.5 84C27.6826 84 30.7348 82.7357 32.9853 80.4853C35.2357 78.2348 36.5 75.1826 36.5 72V24C36.5 20.8174 35.2357 17.7652 32.9853 15.5147C30.7348 13.2643 27.6826 12 24.5 12C21.3174 12 18.2652 13.2643 16.0147 15.5147C13.7643 17.7652 12.5 20.8174 12.5 24C12.5 27.1826 13.7643 30.2348 16.0147 32.4853C18.2652 34.7357 21.3174 36 24.5 36H72.5C75.6826 36 78.7348 34.7357 80.9853 32.4853C83.2357 30.2348 84.5 27.1826 84.5 24C84.5 20.8174 83.2357 17.7652 80.9853 15.5147C78.7348 13.2643 75.6826 12 72.5 12Z"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                        </div>
+                        <div class="master-baner-texts">
+                            <h2 class="minimalism">Мастера минимализма</h2>
+                            <p class="first-class">Первоклассная учебная программа</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="effec-banner">
+                    <div class="effect-banner-bg"></div>
+                    <div class="effect-banner-text">
+                        <h3 class="effect-code">Эффективные кодеры</h3>
+                        <p class="dream-team">Команда мечты стартапов</p>
+                    </div>
+                    <div class="effect-banner-ico">
+                        <div class="effect-banner-ico-bg"></div>
+                        <svg
+                  class="check-square"
+                  width="103"
+                  height="102"
+                  viewBox="0 0 103 102"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M38.75 46.75L51.5 59.5L94 17"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M89.75 51V80.75C89.75 83.0043 88.8545 85.1663 87.2604 86.7604C85.6663 88.3545 83.5043 89.25 81.25 89.25H21.75C19.4957 89.25 17.3337 88.3545 15.7396 86.7604C14.1455 85.1663 13.25 83.0043 13.25 80.75V21.25C13.25 18.9957 14.1455 16.8337 15.7396 15.2396C17.3337 13.6455 19.4957 12.75 21.75 12.75H68.5"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                    </div>
+                </div>
+    
+                <div class="creation-banner">
+                    <div class="creation-banner-bg"></div>
+                    <div class="creation-banner-text">
+                        <h3 class="creationofart">Произведение искусства</h3>
+                        <p class="pretty-code-base">Красивые кодовые базы</p>
+                    </div>
+                    <div class="creation-banner-ico">
+                        <div class="creation-banner-ico-bg"></div>
+                        <svg
+                  class="book-open"
+                  width="105"
+                  height="104"
+                  viewBox="0 0 105 104"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9.16667 13H35.1667C39.7638 13 44.1726 14.8262 47.4232 18.0768C50.6738 21.3274 52.5 25.7362 52.5 30.3333V91C52.5 87.5522 51.1304 84.2456 48.6924 81.8076C46.2544 79.3696 42.9478 78 39.5 78H9.16667V13Z"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M95.8333 13H69.8333C65.2362 13 60.8274 14.8262 57.5768 18.0768C54.3262 21.3274 52.5 25.7362 52.5 30.3333V91C52.5 87.5522 53.8696 84.2456 56.3076 81.8076C58.7456 79.3696 62.0522 78 65.5 78H95.8333V13Z"
+                    stroke="black"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <aside class="action-info">
+                <img class="action-info-image" src="action-info-image.png" alt="Description of the image"> <!-- Alt attribute added -->
+                <div class="actions-info-text">
+                    <h3 class="view">Взгляд в наш минималистичный мир разработки программного обеспечения</h3>
+                    <p class="unic">Исследуйте уникальное сочетание технологий, дизайна и чистого минимализма в нашем кампусе, где инновационное программное обеспечение оживает благодаря силе простоты и элегантности.</p>
+                </div>
+            </aside>
+        </article>
+      </div>    
+      <div class="join">
+        <div class="join-bg"></div>
+        <article class="join-text">
+            <h2 class="join-now">ПРИСОЙДЕНИТЬСЯ СЕЙЧАС!</h2>
+            <p class="it2">
+                Готовы начать свой путь в сфере ИТ? Подайте заявку сегодня и
+                сформируйте будущее с помощью наших непревзойденных
+                <br>IT-специалистов.
+            </p>
+            <div class="join-buttons">
+                <button class="accept-button">
+                    <span class="accept-button-bg"></span>
+                    <span class="accept">Принять</span>
+                </button>
+                <button class="learn-more-button">
+                    <span class="learnt-more-button-bg"></span>
+                    <span class="learn-more">Узнать болше</span>
+                </button>
+            </div>
+        </article>
+      </div>    
+      <footer class="footer">
+        <div class="footer-bg"></div>
+        <div class="footer-info">
+          <nav class="info-group">
+            <ul class="social">
+              <li class="social">Социальные сети</li>
+              <li class="social">Программная инженерия</li>
+              <li class="social">Информатика и вычислитильная техника</li>
+            </ul>
+            <ul class="additional">
+              <li class="social">Аудитории</li>
+              <li class="galery">Галерея</li>
+              <li class="galery">Контакты</li>
+            </ul>
+          </nav>
+          <h2 class="copyright-2023">
             Copyright © 2023 ПОИТ. Все права защищены.
-          </div>
+          </h2>
         </div>
-    </footer>     
-  </div> 
-</body>
+      </footer>
+    </div>
+  </body>
 </html>
