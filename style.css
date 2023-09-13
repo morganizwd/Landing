@@ -643,7 +643,7 @@ body {
   width: 206px;
   height: 80px;
   position: absolute;
-  left: 180px;
+  left: 0px;
   top: 0px;
 }
 .learn-more {
@@ -651,7 +651,7 @@ body {
   text-align: center;
   font: var(--contnentthin, 500 20px/28px "Montserrat", sans-serif);
   position: absolute;
-  left: calc(50% - -12.46px);
+  left: 24px;
   top: calc(50% - 14px);
   width: 155.09px;
 }
@@ -1509,7 +1509,7 @@ blockquote::before, blockquote::after, q::before, q::after {
     width: 206px;
     height: 80px;
     position: absolute;
-    left: 180px;
+    left: 0px;
     top: 0px;
   }
 
@@ -2256,7 +2256,7 @@ blockquote::before, blockquote::after, q::before, q::after {
       width: 140px;
       height: 80px;
       position: absolute;
-      left: 33px;
+      left: 0px;
       top: 0px;
       }
       .accept {
@@ -2266,7 +2266,7 @@ blockquote::before, blockquote::after, q::before, q::after {
       font: var(--contnentthin, 500 20px/28px 'Montserrat', sans-serif);
       position: absolute;
       left: calc(50% - 46px);
-      top: calc(50% - 60px);
+      top: 26px;
       }
 
       .learn-more-button {
@@ -2283,7 +2283,7 @@ blockquote::before, blockquote::after, q::before, q::after {
       height: 80px;
       position: absolute;
       left: 0px;
-      top: 92px;
+      top: 0px;
       }
 
       .learn-more {
@@ -2292,7 +2292,7 @@ blockquote::before, blockquote::after, q::before, q::after {
       font: var(--contnentthin, 500 20px/28px 'Montserrat', sans-serif);
       position: absolute;
       left: calc(50% - 77.54px);
-      top: calc(50% - -32px);
+      top: 26px;
       width: 155.09px;
       }
 
@@ -2358,4 +2358,110 @@ blockquote::before, blockquote::after, q::before, q::after {
         position: relative;
         width: 265px;
         }
+}
+
+.it {
+  transition: text-shadow 0.3s ease;
+}
+
+.it:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.research {
+  transition: text-shadow 0.3s ease; /* плавное изменение свечения текста */
+}
+
+.research:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6); /* свечение вокруг контура текста */
+  cursor: pointer;
+}
+
+.poit{
+  transition: text-shadow 0.3s ease; /* плавное изменение свечения текста */
+}
+
+.poit:hover{
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6); /* свечение вокруг контура текста */
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.it a {
+  text-decoration: none; /* чтобы убрать подчеркивание у ссылки */
+  color: inherit; /* чтобы цвет текста ссылки совпадал с цветом заголовка */
+}
+
+.poit a {
+  text-decoration: none; /* чтобы убрать подчеркивание у ссылки */
+  color: inherit; /* чтобы цвет текста ссылки совпадал с цветом заголовка */
+  display: block; /* чтобы весь блок h2 стал кликабельным */
+}
+
+.research a {
+  text-decoration: none; /* чтобы убрать подчеркивание у ссылки */
+  color: inherit; /* чтобы цвет текста ссылки совпадал с цветом заголовка */
+  display: block; /* чтобы весь блок h2 стал кликабельным */
+}
+
+.accept-button {
+  position: relative;
+  overflow: hidden; /* для корректного отображения свечения, если потребуется */
+  transition: transform 0.3s ease; /* плавный переход для поднятия кнопки */
+  cursor: pointer;
+}
+
+.accept-button:hover {
+  transform: translateY(-5px); /* поднимаем кнопку вверх на 5px */
+  /* Если желаете, чтобы кнопка также опускалась вниз после поднятия, 
+     вы можете добавить анимацию или использовать JavaScript, так как CSS 
+     не предоставляет функциональности для выполнения цикличных анимаций 
+     при наведении */
+}
+
+.learn-more-button {
+  position: relative;
+  overflow: hidden; /* для корректного отображения свечения */
+  transition: transform 0.3s ease; /* плавный переход для поднятия кнопки */
+  cursor: pointer;
+}
+
+.learn-more-button:hover {
+  transform: translateY(-5px); /* поднимаем кнопку вверх на 5px */
+}
+
+/* Стиль для элементов списка */
+.social, .additional li {
+  transition: color 0.3s ease, transform 0.3s ease; 
+  cursor: pointer; /* указатель руки для интерактивных элементов */
+}
+
+.social:hover, .additional li:hover {
+  color: #c2e0ff; /* Светло-синий, можете выбрать другой цвет */
+  transform: scale(1.05); /* небольшое увеличение масштаба при наведении */
+  text-decoration: underline; /* подчеркивание при наведении */
+}
+
+/* Если у вас будут ссылки в футере, то для ссылок: */
+.additional a {
+  text-decoration: none; /* убрать подчеркивание */
+  color: inherit; /* наследовать цвет от родительского элемента */
+}
+
+.additional a:hover {
+  color: #c2e0ff; 
+  text-decoration: underline;
+}
+
+/* Для элемента copyright */
+.copyright-2023 {
+  transition: color 0.3s ease;
+}
+
+.copyright-2023:hover {
+  color: #c2e0ff; 
 }
