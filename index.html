@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style.css">
     <script src="translateScript.js" defer></script>
     <script src="themeChanger.js" defer></script>
+    <script src="musicOnOff.js" defer></script>
     <style>
       a,
       button,
@@ -29,6 +30,9 @@
     <title>Document</title>
   </head>
   <body>
+    <audio id="music" preload="none">
+      <source src="Where's my mind.mp3" type="audio/mpeg">
+    </audio>
     <div class="desktop">
       <section class="hero">
         <img class="image" src="image.png" alt="">
@@ -60,19 +64,9 @@
                  Исследуй
               </a>
             </h2>          
-            <svg
-              class="ellipse-2"
-              width="43"
-              height="84"
-              viewBox="0 0 43 84"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M42.2902 42C42.2902 65.196 42.2902 84 42.2902 84C19.0943 84 0.290222 65.196 0.290222 42C0.290222 18.804 19.0943 0 42.2902 0C42.2902 0 42.2902 18.804 42.2902 42Z"
-                fill="#D9D9D9"
-              />
-            </svg>
+            <svg class="ellipse-2" width="43" height="84" viewBox="0 0 43 84" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="toggleMusic()">
+              <path d="M42.2902 42C42.2902 65.196 42.2902 84 42.2902 84C19.0943 84 0.290222 65.196 0.290222 42C0.290222 18.804 19.0943 0 42.2902 0C42.2902 0 42.2902 18.804 42.2902 42Z" fill="#D9D9D9"/>
+            </svg>          
           </div>
           <div class="langs" >
             <div class="eng" >
