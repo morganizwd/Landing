@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-
+    <script src="translateScript.js" defer></script>
+    <script src="langChangeVisualResponse.js"></script>
     <style>
       a,
       button,
@@ -34,19 +35,31 @@
         <div class="hero-contant">
           <div class="frame-2">
             <div class="ellipse-1"></div>
-              <h2 class="poit">
-                <a href="#welcome-section">ПОИТ</a>
-              </h2>
+            <h2 class="poit">
+              <a href="#welcome-section" 
+                 data-lang-ru="ПОИТ" 
+                 data-lang-en="POIT">
+                 ПОИТ
+              </a>
+            </h2>          
           </div>
           <div class="text">
             <h1 class="it">
-              <a href="#join-section">РАССКРОЙ СВОЙ<br>ПОТЕНЦИАЛ В IT</a>
-          </h1>
+              <a href="#join-section" 
+                 data-lang-ru="РАССКРОЙ СВОЙ<br>ПОТЕНЦИАЛ В IT" 
+                 data-lang-en="UNLOCK YOUR<br>POTENTIAL IN IT">
+                 РАССКРОЙ СВОЙ<br>ПОТЕНЦИАЛ В IT
+              </a>
+          </h1>          
           </div>
           <div class="frame-1">
-              <h2 class="research">
-                <a href="#features-section">Исследуй</a>
-              </h2>
+            <h2 class="research">
+              <a href="#features-section" 
+                 data-lang-ru="Исследуй" 
+                 data-lang-en="Explore">
+                 Исследуй
+              </a>
+            </h2>          
             <svg
               class="ellipse-2"
               width="43"
@@ -61,28 +74,40 @@
               />
             </svg>
           </div>
+          <div class="langs" >
+            <div class="eng" >
+            Eng </div>
+            <div class="rus" >
+            Rus </div>
+            </div>
         </div>
       </section>
       <article class="welcome" id="welcome-section">
         <img class="welcome-bg" src="welcome-bg.png" alt="">
         <div class="frame-4">
-          <h2 class="greetings">Добро пожаловать на ПОИТ</h2>
+          <h2 class="greetings" 
+              data-lang-ru="Добро пожаловать на ПОИТ" 
+              data-lang-en="Welcome to POIT">
+              Добро пожаловать на ПОИТ
+          </h2>
           <div class="frame-3">
-            <p class="paragraph">
-              Измените свое ИТ-образование и навыки с помощью нашего
-              современного университетского факультета, специализирующегося на
-              двух передовых специальностях.
-            </p>
-            <p class="paragraph">
-              Погрузитесь в мир программирования и информационных технологий с
-              помощью наших первоклассных преподавателей и выдающихся ресурсов.
-            </p>
-            <p class="paragraph">
-              Присоединяйтесь к рядам успешных программистов и ИТ-экспертов,
-              которые отточили свой опыт в нашем исключительном учреждении.
-            </p>
+              <p class="paragraph" 
+                 data-lang-ru="Измените свое ИТ-образование и навыки с помощью нашего современного университетского факультета, специализирующегося на двух передовых специальностях." 
+                 data-lang-en="Transform your IT education and skills with our modern university faculty specializing in two advanced majors.">
+                 Измените свое ИТ-образование и навыки с помощью нашего современного университетского факультета, специализирующегося на двух передовых специальностях.
+              </p>
+              <p class="paragraph" 
+                 data-lang-ru="Погрузитесь в мир программирования и информационных технологий с помощью наших первоклассных преподавателей и выдающихся ресурсов." 
+                 data-lang-en="Dive into the world of programming and information technology with our top-tier teachers and outstanding resources.">
+                 Погрузитесь в мир программирования и информационных технологий с помощью наших первоклассных преподавателей и выдающихся ресурсов.
+              </p>
+              <p class="paragraph" 
+                 data-lang-ru="Присоединяйтесь к рядам успешных программистов и ИТ-экспертов, которые отточили свой опыт в нашем исключительном учреждении." 
+                 data-lang-en="Join the ranks of successful programmers and IT experts who have honed their skills at our exceptional institution.">
+                 Присоединяйтесь к рядам успешных программистов и ИТ-экспертов, которые отточили свой опыт в нашем исключительном учреждении.
+              </p>
           </div>
-        </div>
+        </div>      
       </article>
       <section class="features" id="features-section">
         <div class="bg"></div> 
@@ -90,24 +115,37 @@
             <div class="feature-card-1">
                 <img class="image2" src="image2.png" alt="Описание изображения"> 
                 <div class="frame-12">
-                    <h2 class="pir">Программная инженерия</h2> 
-                    <p class="gain">Овладейте искусством написания кода</p> 
-                </div>
+                  <h2 class="pir" 
+                      data-lang-ru="Программная инженерия" 
+                      data-lang-en="Software Engineering">
+                      Программная инженерия
+                  </h2>
+                  <p class="gain" 
+                     data-lang-ru="Овладейте искусством написания кода" 
+                     data-lang-en="Master the art of coding">
+                     Овладейте искусством написания кода
+                  </p>
+                </div>              
             </div>
           </div>
       </section>    
       <article class="bw-shine">
         <div class="bw-shine-bg"></div> <!-- Если это фоновое изображение, его можно оставить таким образом. -->
         <img class="bw-shine-image" src="bw-shine-image.png" alt="Описание изображения"> <!-- Добавил alt для описания изображения -->
-    
         <div class="bw-shine2">
-            <h2 class="bw">Черно-белый блеск</h2> <!-- Преобразовал в h2, предполагая что это подходящий уровень иерархии для этого заголовка -->
-            <div class="dive-in">
-                <p class="reload-paragraph">
-                    Погрузитесь в мир разработки программного обеспечения, где главенствуют минимализм и монохромный стиль. В нашем университете мы сочетаем передовые технологии, вневременную эстетику и практические знания для создания инновационных решений.
-                </p>
-            </div>
-        </div>
+          <h2 class="bw" 
+              data-lang-ru="Черно-белый блеск" 
+              data-lang-en="Black and White Shine">
+              Черно-белый блеск
+          </h2>
+          <div class="dive-in">
+              <p class="reload-paragraph" 
+                 data-lang-ru="Погрузитесь в мир разработки программного обеспечения, где главенствуют минимализм и монохромный стиль. В нашем университете мы сочетаем передовые технологии, вневременную эстетику и практические знания для создания инновационных решений." 
+                 data-lang-en="Dive into the world of software development where minimalism and monochromatic style reign supreme. At our university, we combine cutting-edge technology, timeless aesthetics, and practical knowledge to craft innovative solutions.">
+                 Погрузитесь в мир разработки программного обеспечения, где главенствуют минимализм и монохромный стиль. В нашем университете мы сочетаем передовые технологии, вневременную эстетику и практические знания для создания инновационных решений.
+              </p>
+          </div>
+      </div>      
       </article>    
       <div class="action">
         <div class="action-bg"></div>
@@ -137,18 +175,34 @@
                   </svg>
                         </div>
                         <div class="master-baner-texts">
-                            <h2 class="minimalism">Мастера минимализма</h2>
-                            <p class="first-class">Первоклассная учебная программа</p>
-                        </div>
+                          <h2 class="minimalism" 
+                              data-lang-ru="Мастера минимализма" 
+                              data-lang-en="Masters of Minimalism">
+                              Мастера минимализма
+                          </h2>
+                          <p class="first-class" 
+                             data-lang-ru="Первоклассная учебная программа" 
+                             data-lang-en="First-class curriculum">
+                             Первоклассная учебная программа
+                          </p>
+                        </div>                      
                     </div>
                 </div>
     
                 <div class="effec-banner">
                     <div class="effect-banner-bg"></div>
                     <div class="effect-banner-text">
-                        <h3 class="effect-code">Эффективные кодеры</h3>
-                        <p class="dream-team">Команда мечты стартапов</p>
-                    </div>
+                      <h3 class="effect-code" 
+                          data-lang-ru="Эффективные кодеры" 
+                          data-lang-en="Efficient Coders">
+                          Эффективные кодеры
+                      </h3>
+                      <p class="dream-team" 
+                         data-lang-ru="Команда мечты стартапов" 
+                         data-lang-en="Startup Dream Team">
+                         Команда мечты стартапов
+                      </p>
+                    </div>                  
                     <div class="effect-banner-ico">
                         <div class="effect-banner-ico-bg"></div>
                         <svg
@@ -180,9 +234,17 @@
                 <div class="creation-banner">
                     <div class="creation-banner-bg"></div>
                     <div class="creation-banner-text">
-                        <h3 class="creationofart">Произведение искусства</h3>
-                        <p class="pretty-code-base">Красивые кодовые базы</p>
-                    </div>
+                      <h3 class="creationofart" 
+                          data-lang-ru="Произведение искусства" 
+                          data-lang-en="A Work of Art">
+                          Произведение искусства
+                      </h3>
+                      <p class="pretty-code-base" 
+                         data-lang-ru="Красивые кодовые базы" 
+                         data-lang-en="Beautiful Codebases">
+                         Красивые кодовые базы
+                      </p>
+                    </div>                  
                     <div class="creation-banner-ico">
                         <div class="creation-banner-ico-bg"></div>
                         <svg
@@ -216,17 +278,27 @@
             <aside class="action-info">
                 <img class="action-info-image" src="action-info-image.png" alt="Description of the image"> <!-- Alt attribute added -->
                 <div class="actions-info-text">
-                    <h3 class="view">Взгляд в наш минималистичный мир разработки программного обеспечения</h3>
-                    <p class="unic">Исследуйте уникальное сочетание технологий, дизайна и чистого минимализма в нашем кампусе, где инновационное программное обеспечение оживает благодаря силе простоты и элегантности.</p>
-                </div>
+                  <h3 class="view" 
+                      data-lang-ru="Взгляд в наш минималистичный мир разработки программного обеспечения" 
+                      data-lang-en="A Glimpse into Our Minimalist World of Software Development">
+                      Взгляд в наш минималистичный мир разработки программного обеспечения
+                  </h3>
+                  <p class="unic" 
+                     data-lang-ru="Исследуйте уникальное сочетание технологий, дизайна и чистого минимализма в нашем кампусе, где инновационное программное обеспечение оживает благодаря силе простоты и элегантности." 
+                     data-lang-en="Explore the unique blend of technology, design, and pure minimalism at our campus where innovative software comes to life through the power of simplicity and elegance.">
+                     Исследуйте уникальное сочетание технологий, дизайна и чистого минимализма в нашем кампусе, где инновационное программное обеспечение оживает благодаря силе простоты и элегантности.
+                  </p>
+                </div>              
             </aside>
         </article>
       </div>    
       <div class="join" id="join-section">
         <div class="join-bg"></div>
         <article class="join-text">
-            <h2 class="join-now">ПРИСОЙДЕНИТЬСЯ СЕЙЧАС!</h2>
-            <p class="it2">
+            <h2 class="join-now" data-lang-ru="ПРИСОЙДЕНИТЬСЯ СЕЙЧАС!" data-lang-en="JOIN NOW!">
+                ПРИСОЙДЕНИТЬСЯ СЕЙЧАС!
+            </h2>
+            <p class="it2" data-lang-ru="Готовы начать свой путь в сфере ИТ? Подайте заявку сегодня и сформируйте будущее с помощью наших непревзойденных IT-специалистов." data-lang-en="Ready to start your journey in IT? Apply today and shape your future with our unparalleled IT experts.">
                 Готовы начать свой путь в сфере ИТ? Подайте заявку сегодня и
                 сформируйте будущее с помощью наших непревзойденных
                 <br>IT-специалистов.
@@ -234,35 +306,41 @@
             <div class="join-buttons">
                 <button class="accept-button">
                     <span class="accept-button-bg"></span>
-                    <span class="accept">Принять</span>
+                    <span class="accept" data-lang-ru="Принять" data-lang-en="Accept">
+                        Принять
+                    </span>
                 </button>
                 <button class="learn-more-button">
                     <span class="learnt-more-button-bg"></span>
-                    <span class="learn-more">Узнать болше</span>
+                    <span class="learn-more" data-lang-ru="Узнать болше" data-lang-en="Learn More">
+                        Узнать болше
+                    </span>
                 </button>
             </div>
         </article>
-      </div>    
-      <footer class="footer">
+    </div>    
+    <footer class="footer">
         <div class="footer-bg"></div>
         <div class="footer-info">
-          <nav class="info-group">
-            <ul class="social">
-              <li class="social">Социальные сети</li>
-              <li class="social">Программная инженерия</li>
-              <li class="social">Информатика и вычислитильная техника</li>
-            </ul>
-            <ul class="additional">
-              <li class="social">Аудитории</li>
-              <li class="galery">Галерея</li>
-              <li class="galery">Контакты</li>
-            </ul>
-          </nav>
-          <h2 class="copyright-2023">
-            Copyright © 2023 ПОИТ. Все права защищены.
-          </h2>
+            <nav class="info-group">
+                <ul class="social">
+                    <!-- Здесь я предполагаю, что "Социальные сети" может быть заголовком этого списка. -->
+                    <li class="social" data-lang-ru="Социальные сети" data-lang-en="Social Networks">Социальные сети</li>
+                    <!-- Произведение перевода для двух следующих пунктов было выполнено ранее. -->
+                    <li class="social">Программная инженерия</li>
+                    <li class="social">Информатика и вычислитильная техника</li>
+                </ul>
+                <ul class="additional">
+                    <li class="social" data-lang-ru="Аудитории" data-lang-en="Auditoriums">Аудитории</li>
+                    <li class="galery" data-lang-ru="Галерея" data-lang-en="Gallery">Галерея</li>
+                    <li class="galery" data-lang-ru="Контакты" data-lang-en="Contacts">Контакты</li>
+                </ul>
+            </nav>
+            <h2 class="copyright-2023" data-lang-ru="Copyright © 2023 ПОИТ. Все права защищены." data-lang-en="Copyright © 2023 POIT. All rights reserved.">
+                Copyright © 2023 ПОИТ. Все права защищены.
+            </h2>
         </div>
-      </footer>
+    </footer>    
     </div>
   </body>
 </html>
