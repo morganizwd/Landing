@@ -2465,3 +2465,40 @@ html {
 .copyright-2023:hover {
   color: #c2e0ff; 
 }
+
+.langs {
+  position: absolute;
+  inset: 0;
+  }
+  .eng {
+  color: #ffffff;
+  text-align: center;
+  font: 700 15px/23px 'Montserrat', sans-serif;
+  position: absolute;
+  left: calc(50% - 34px);
+  top: 46px;
+  }
+  .rus {
+  color: #666666;
+  text-align: center;
+  font: 700 15px/23px 'Montserrat', sans-serif;
+  position: absolute;
+  left: calc(50% - -5px);
+  top: 46px;
+  }
+
+  .active-lang {
+    color: #666666;
+  }
+
+  .eng, .rus {
+    color: #ffffff;
+    text-align: center;
+    font: 700 15px/23px 'Montserrat', sans-serif;
+    position: absolute;
+    transition: color 0.3s; /* Добавлено это свойство */
+}
+
+.active-lang {
+    color: #666666;
+}
